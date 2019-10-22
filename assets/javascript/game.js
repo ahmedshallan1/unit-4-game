@@ -50,7 +50,8 @@ $(document).ready(function () {
         $('#totalScore').text(playerTotal);
     }
     // Display wins
-    function wins() {
+    function youWin() {
+        console.log("win")
         alert("Congrats! You won!");
         wins++;
         $('#wins').text(wins);
@@ -68,9 +69,11 @@ $(document).ready(function () {
         playerTotal = playerTotal + num1;
         console.log("New playerTotal= " + playerTotal);
         $('#totalScore').text(playerTotal);
+        console.log(playerTotal, Random)
         //Win & lose conditions
         if (playerTotal == Random) {
-            wins();
+            console.log("equals")
+            youWin();
         }
         else if (playerTotal > Random) {
             loser();
@@ -80,8 +83,10 @@ $(document).ready(function () {
         playerTotal = playerTotal + num2;
         console.log("New playerTotal= " + playerTotal);
         $('#totalScore').text(playerTotal);
+        console.log(playerTotal, Random)
         if (playerTotal == Random) {
-            wins();
+            console.log("equals")
+            youWin();
         }
         else if (playerTotal > Random) {
             loser();
@@ -91,9 +96,10 @@ $(document).ready(function () {
         playerTotal = playerTotal + num3;
         console.log("New playerTotal= " + playerTotal);
         $('#totalScore').text(playerTotal);
-
+        console.log(playerTotal, Random)
         if (playerTotal == Random) {
-            wins();
+            console.log("equals")
+            youWin();
         }
         else if (playerTotal > Random) {
             loser();
@@ -103,9 +109,10 @@ $(document).ready(function () {
         playerTotal = playerTotal + num4;
         console.log("New playerTotal= " + playerTotal);
         $('#totalScore').text(playerTotal);
-
+        console.log(playerTotal, Random)
         if (playerTotal == Random) {
-            wins();
+            console.log("equals")
+            youWin();
         }
         else if (playerTotal > Random) {
             loser();
